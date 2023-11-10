@@ -15,32 +15,41 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="seach" placeholder="Enter a city" />
-          <input type="submit" value="seach" />
+        <form class="search-form">
+          <input
+            type="seach"
+            placeholder="Enter a city"
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>City</h1>
-          <p>
-            Friday 17:55, Rain
-            <br />
-            humidity: 88%, Wind: 5km/h
-          </p>
+        <div class="weather-data">
+          <div>
+            <h1 class="weather-city">City</h1>
+            <p class="weather-details">
+              Friday 17:55, Rain
+              <br />
+              humidity: <strong>88%</strong>, Wind: <strong>5km/h</strong>
+            </p>
+          </div>
+          <div class="weather-temperature-container">
+            <div class="weather-icon">🌧️</div>
+            <div class="weather-temperature">8</div>
+            <div class="weather-unit">°C</div>
+          </div>
         </div>
-        <div>🌧️ 8°C</div>
       </main>
       <footer>
         This project was coded by
-        <a href="https://github.com/alicerec" target="_blank">Alice </a>, code
-        is
+        <a href="https://github.com/alicerec" target="_blank">Alice</a>, code is
         <a href="https://github.com/alicerec/meteo" target="_blank">
           open-sourced on GitHub</a
         >, and
         <a href="https://meteo-app-ex.netlify.app/" target="_blank">
-          hosted on Netlify</a
-        >>
+          hosted on Netlify
+        </a>
       </footer>
     </div>
   </body>
