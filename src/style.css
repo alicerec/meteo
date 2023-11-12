@@ -13,7 +13,7 @@ a {
   color: #f76b8a;
 }
 .weather-app {
-  background-color: white;
+  background-color: #fcfefe;
   max-width: 500px;
   margin: 45px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
@@ -63,6 +63,7 @@ main {
 .weather-data {
   display: flex;
   justify-content: space-between;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .weather-city {
@@ -74,9 +75,13 @@ main {
   font-size: 20px;
   line-height: 20px;
 }
-.weather-details strong {
+#description {
+  font-weight: bold;
   color: #f76b8a;
+}
+.weather-details strong {
   font-weight: 500;
+  color: #66bfbf;
 }
 
 .weather-temperature-container {
