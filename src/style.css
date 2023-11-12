@@ -88,16 +88,19 @@ main {
   display: flex;
 }
 .weather-icon {
-  font-size: 44px;
-  margin-top: 22px;
+  width: 88px;
+  height: 88px;
+  margin-top: 10px;
   margin-left: 10px;
 }
 .weather-temperature {
   font-size: 88px;
   font-weight: bold;
+  line-height: 88px;
+  margin-top: 10px;
 }
 .weather-unit {
-  margin-top: 16px;
+  margin-top: 10px;
   font-size: 28px;
 }
 footer {
