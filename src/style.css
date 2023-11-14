@@ -14,7 +14,7 @@ a {
 }
 .weather-app {
   background-color: #fcfefe;
-  max-width: 500px;
+  max-width: 600px;
   margin: 45px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 16px;
@@ -72,10 +72,11 @@ main {
   line-height: 48px;
 }
 .weather-details {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 20px;
 }
-#description {
+
+.weather-details #description {
   font-weight: bold;
   color: #f76b8a;
 }
