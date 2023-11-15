@@ -57,7 +57,35 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+        <div class="col-2">
+            <div class="weather-forecast-date">${day}</div>
+            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png"
+             width="36"
+           />
+            <div class="weather-forecast-temperature">
+            <span class="weather-forecast-temperature-maximum">18°</span>
+            <span class="weather-forecast-temperature-minimum">12°</span>
+            </div>
+        </div>
+    `;
+  });
+
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Amsterdam");
+
+displayForecast();
