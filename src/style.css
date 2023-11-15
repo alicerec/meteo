@@ -118,6 +118,10 @@ footer {
   text-align: center;
   color: 000;
 }
+.weather-forecast-icon {
+  width: 60px;
+  height: 60px;
+}
 .weather-forecast-date,
 .weather-forecast-temperature-minimum {
   font-size: 16px;
